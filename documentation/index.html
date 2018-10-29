@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Biztrox Documentation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/layout.js"></script>
+  <script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+  <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter/styles/shCoreDefault.css" />
+  <script type="text/javascript">
+    SyntaxHighlighter.all();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="text-center">
+    <div class="links">
+      <a target="_blank" href="https://forums.athemes.com/">Support Center</a>
+      <a href="#changelog">Template Changelog</a>
+      <a target="_blank" href="https://demo.themefisher.com/athemes/lawyerfirm">View Template Demo</a>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div id="header-wrapper">
+      <div class="container text-center" id="hb-header">
+        <a id="logo" href="#">
+          <img rel="Highend" src="img/logo.jpg">
+        </a>
+        <strong>Version:</strong> 1.0 |
+        <strong>Last update:</strong> 06 August 2018
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <ul class="docs-nav">
+          <li>
+            <strong>Introduction</strong>
+          </li>
+          <li>
+            <a href="#getting-started" class="cc-active active">Getting Started</a>
+          </li>
+          <li>
+            <a href="#logo-settings" class="cc-active">Logo</a>
+          </li>
+          <li>
+            <a href="#chaning-fonts" class="cc-active">Fonts</a>
+          </li>
+          <li>
+            <a href="#icons" class="cc-active">Icons</a>
+          </li>
+          <li>
+            <a href="#grid" class="cc-active">Grid</a>
+          </li>
+          <li>
+            <a href="#browser-support" class="cc-active">Browser Support</a>
+          </li>
+          <li>
+            <a href="#faqs" class="cc-active">FAQs</a>
+          </li>
+          <li>
+            <a href="#credits" class="cc-active">Source &amp; Credits</a>
+          </li>
+          <li>
+            <a href="#changelog" class="cc-active">Changelog</a>
+          </li>
+
+
+        </ul>
+        <div class="docs-content">
+          <div class="docs-content-inner" id="docs-start-less">
+            <section id="getting-started">
+              <h1>Introduction</h1>
+              <p>Thank you for downloading Biztrox template!</p>
+              <p> This documentation will give you an understanding of how Biztrox is structured and guide you in performing
+                common functions. If you require further assistance not covered in this documentation, please contact with
+                us in our Support Portal
+                <a href="https://themefisher.com">Themefisher Support</a>
+              </p>
+              <p>Thank you so much!</p>
+              <p>&nbsp;</p>
+              <h1 id="Installation">Getting Started</h1>
+              <h4>What's Included</h4>
+              <p>Once you have download the package you will see the following folder structure in "
+                <strong>template</strong>" Folder</p>
+
+              <div id="default-tree">
+                <ul>
+                  <li>
+                    <strong>css</strong> - Main Stylesheet File &amp; Css map</li>
+                  <li>
+                    <strong>images </strong>- Images Files</li>
+                  <li>
+                    <strong>js</strong> - Javacripts Files</li>
+                  <li>
+                    <strong>plugins</strong> - All 3rd party js/css plugins</li>
+                  <li>
+                    <strong>SCSS</strong> - Scss Files</li>
+                </ul>
+              </div>
+              <p>
+                In order to use in your website, you need to upload template files (
+                <strong>inside the folder template</strong>) to your web server with the help of one of the FTP-clients (for example,
+                Filezilla).
+              </p>
+              <p>Biztrox template is based on Bootstrap Framework (
+                <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile first projects on the web.</p>
+              <p>Below is a sample coding structure:</p>
+            </section>
+
+            <section id="logo-settings">
+              <h1>Logo Settings</h1>
+
+              <p>Default site logo is placed inside
+                <code>.navbar-brand</code> class</p>
+
+              <pre class="brush: html;">
+							    <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.png" alt="logo">
+                </a>
+
+							</pre>
+
+            </section>
+
+            <section id="chaning-fonts">
+
+
+              <h1>Changing Fonts</h1>
+              <p>By default Biztrox Template uses Playfair Display &amp; Work Sans from google library:
+                <a target="_blank" href="https://fonts.google.com/">Google Fonts Library</a>
+              </p>
+              <p>If you wish to add/change the site fonts, please open
+                <code>css/style.css</code> file and at the top there is 2 fonts imported from google.
+              </p>
+
+              <pre class="brush: css">
+              @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:300,400,500,600,700|Work+Sans:400,500,600');
+              </pre>
+
+            </section>
+
+
+            <section id="icons">
+              <h1>Icons font</h1>
+              <br>
+              <p>We have included
+                <a href="https://themify.me/themify-icons">themify</a> icon fonts in Biztrox template.</p>
+              <p>You can place icon fonts just about anywhere using their icon's name. fontawesome icon is designed to be used
+                with inline elements (we like the
+                <code>&lt;i&gt;</code> tag for brevity, but using a
+                <code>&lt;span&gt;</code> is more semantically correct).
+              </p>
+              <p>In plugins folder you will get the full fonts list</p>
+              <p>Please see below exmaple code:</p>
+              <pre class="brush: html"><i class="ti-search"></i></pre>
+            </section>
+            <section id="grid">
+              <h1>
+                Grid
+              </h1>
+              <p>
+                Bootstrap grid includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device
+                or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins
+                for generating more semantic layouts
+              </p>
+              <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content.
+                Here's how the Bootstrap grid system works:</p>
+              <ul>
+                <li>You must start with
+                  <code>row</code>
+                </li>
+                <li>There are pre-define classes of columns starting from 1 to 12, example
+                  <code>col-md-1</code> to
+                  <code>col-md-12</code>
+                </li>
+                <li>Each of these value represent a percentage of the screen, 1 being the smallest and 12 being 100%</li>
+                <li>You can create different grid pattern that finally forms 12 </li>
+              </ul>
+              <p>For more information about Bootstrap, visit:
+                <a href="http://getbootstrap.com/"> http://getbootstrap.com/</a>
+              </p>
+              <p>
+                example :
+              </p>
+              <pre class="brush: html;"><div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div></pre>
+              <br>
+
+
+            </section>
+            <section id="browser-support">
+
+              <h1>Browser Support</h1>
+
+              <p>Biztrox is built keeping mind to support a wide range of browsers and devices. We all major browers Google
+                Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+              <p></p>
+
+              <br>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <th>Chrome</th>
+                      <th>Firefox</th>
+                      <th>Internet Explorer</th>
+                      <th>Opera</th>
+                      <th>Safari</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Android</th>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+                      <td class="text-danger">
+                        <span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                      <td class="text-muted">N/A</td>
+                    </tr>
+                    <tr>
+                      <th>iOS</th>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-muted">N/A</td>
+                      <td class="text-danger">
+                        <span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                    </tr>
+                    <tr>
+                      <th>Mac OS X</th>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                    </tr>
+                    <tr>
+                      <th>Windows</th>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-success">
+                        <span class="glyphicon glyphicon-ok"></span> Supported</td>
+                      <td class="text-danger">
+                        <span class="glyphicon glyphicon-remove"></span> Not Supported</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section id="faqs">
+              <h1>FAQS</h1>
+              <ol>
+                <li>
+                  <strong>Can I use the images that includes in the template ?</strong>
+                  <br>All images are only for demonstration purpose, You can not use them in your site.
+                  <br>
+                  <br>
+                </li>
+
+              </ol>
+            </section>
+            <section id="credits">
+
+              <h1>Source &amp; Credits</h1>
+              <p>All images are only for demonstration purpose, however you can download free images from the sites below. Almost
+                all.</p>
+              <br>
+              <br>
+              <h4>Images &amp; Mockups</h4>
+
+
+              <ul>
+                <li>All Free Stocks
+                  <a target="_blank" href="allthefreestock.com">http://allthefreestock.com</a>
+                </li>
+                <li>The Stocks
+                  <a target="_blank" href="http://thestocks.im/">http://thestocks.im/</a>
+                </li>
+                <li>Unsplash
+                  <a target="_blank" href="http://unsplash.com/">http://unsplash.com/</a>
+                </li>
+                <li>Gratisography
+                  <a target="_blank" href="http://www.gratisography.com/">http://www.gratisography.com/</a>
+                </li>
+                <li>Placeit
+                  <a target="_blank" href="https://placeit.net/c/people">https://placeit.net/c/people</a>
+                </li>
+                <li>ImmagiPic
+                  <a target="_blank" href="http://www.immagipic.com/">http://www.immagipic.com/</a>
+                </li>
+                <li>Pixabay
+                  <a target="_blank" href="https://www.pixabay.com/"> https://www.pixabay.com/</a>
+                </li>
+                <li>Pexels
+                  <a target="_blank" href="https://www.pexels.com/"> https://www.pexels.com/</a>
+                </li>
+
+              </ul>
+
+              <br>
+              <br>
+
+
+              <h4>Plugins</h4>
+
+
+              <ul>
+                <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+                <script src="plugins/instafeed-js/instafeed.min.js"></script>
+
+
+
+                <li>Animate On Scroll(AOS)
+                  <a target="_blank" href="http://michalsnik.github.io/aos/"> http://michalsnik.github.io/aos/</a>
+                </li>
+                <li>Bootstrap
+                  <a target="_blank" href="https://getbootstrap.com"> getbootstrap.com</a>
+                </li>
+                <li>jQuery
+                  <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+                </li>
+                <li>Magnific popup
+                  <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+                </li>
+                <li>MixitUp
+                  <a target="_blank" href="https://www.kunkalabs.com/mixitup/">https://www.kunkalabs.com/mixitup/</a>
+                </li>
+                <li> Animate css
+                  <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+                </li>
+                <li>Slick Slider
+                  <a target="_blank" href="http://kenwheeler.github.io/slick/">http://kenwheeler.github.io/slick/</a>
+                </li>
+                <li>Themify Icons
+                  <a target="_blank" href="https://themify.me/themify-icons">https://themify.me/themify-icons</a>
+                </li>
+                <li>Syo Timer
+                  <a target="_blank" href="https://themify.me/themify-icons">https://github.com/mrfratello/SyoTimer</a>
+                </li>
+                <li>Way points
+                  <a target="_blank" href="https://themify.me/themify-icons">http://imakewebthings.com/waypoints/</a>
+                </li>
+              </ul>
+
+
+
+            </section>
+            <section id="changelog">
+              <h1>Changelog</h1>
+              <h4>V1.0
+                <small>06 Aug 2018</small>
+              </h4>
+              <p>Initial Release</p>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <div id="footer-wrapper">
+    <div class="container" id="footer">
+      <div class="links">
+        <a target="_blank" href="https://forums.athemes.com/">Support Center</a>
+        <a href="#changelog">Template Changelog</a>
+        <a target="_blank" href="#">View Template Demo</a>
+      </div>
+      <p id="copyright">Copyright 2018 | Themefisher</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
