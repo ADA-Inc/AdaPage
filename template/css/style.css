@@ -1480,6 +1480,10 @@ button {
       align-items: center;
 }
 
+#slider-op > .slick-list > :first-child{
+  height: 44em;
+}
+
 /* client logo slider end */
 /* 11. fun-facts section start */
 .fun-facts {
@@ -2621,5 +2625,3 @@ ul.tag-list li a:hover {
 .back-to-top:focus {
   outline: 0;
 }
-
-/*# sourceMappingURL=maps/style.css.map */
